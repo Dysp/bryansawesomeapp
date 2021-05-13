@@ -2,6 +2,92 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.yo {
-  font-size: 40px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  background-image: url(../images/BJJ.jpg);
+  height: 100vh;
+}
+
+.container {
+  // background-image: url(../images/BJJ.jpg);
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.login {
+  min-width: 800px;
+}
+
+.login h1 {
+  // justify-self: start;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: start;
+}
+
+.row input {
+  height: 2.5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  background-color: rgb(165, 165, 165);
+}
+
+.row h1 {
+  flex-direction: row;
+  justify-self: start;
+  align-self: start;
+}
+
+#forgot-pass {
+  display: inline-flex;
+  justify-content: space-between;
+  align-self: center;
+  vertical-align: baseline;
+  position: relative;
+}
+
+#forgot-pass a {
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.top {
+  font-size: 20px;
+  margin-bottom: 3rem;
+}
+
+.user {
+  margin: 2rem 0;
+}
+
+.password {
+  // background-color: rgb(89, 138, 126);
+}
+
+.password input {
+  // margin: 0;
+}
+
+.button button {
+  background-color: red;
+  margin-top: 5rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
