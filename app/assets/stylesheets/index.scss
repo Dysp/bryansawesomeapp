@@ -5,7 +5,7 @@
   display: grid;
   grid-column-gap: 25px;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.25fr repeat(4, 1fr);
+  grid-template-rows: 0.25fr repeat(3, 1fr);
   grid-template-areas:
     "nav nav nav nav nav nav"
     "box1 box1 box2 box2 box2 box2"
@@ -21,15 +21,19 @@
 
 .box1 {
   grid-area: box1;
-  //   grid-column: span 3;
-  //   grid-row: span 3;
   background: rgb(97, 14, 97);
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  img {
+    width: 40px;
+    height: 40px;
+    margin: 5rem auto 2rem auto;
+  }
 }
 
 .box2 {
   grid-area: box2;
-  //   grid-column: span 9;
-  //   order: 3;
   background: darkblue;
   margin-top: 25px;
   margin-right: 25px;
@@ -37,14 +41,30 @@
 
 .box3 {
   grid-area: box3;
-  //   grid-row: span 6;
   background: rgb(114, 9, 9);
   margin: 25px 0;
 }
 
 .box4 {
   grid-area: box4;
-  //   grid-row: span 6;
   background: rgb(0, 123, 139);
   margin: 25px 25px 25px 0;
+}
+
+.personal-details {
+  margin-top: 2rem;
+  width: 100%;
+  //   background: red;
+  text-align: start;
+  .row {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    // background-color: rgb(13, 129, 23);
+    justify-content: space-between;
+  }
+  .bottom {
+    text-align: right;
+    // background: blue;
+  }
 }
