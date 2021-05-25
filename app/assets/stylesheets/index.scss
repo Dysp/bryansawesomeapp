@@ -12,13 +12,15 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(3, 1fr);
 
-  .box1 {
+  .user {
     grid-column: 1;
     grid-row: span 3;
     background: rgb(97, 14, 97);
-    flex-direction: column;
-    display: flex;
-    text-align: center;
+
+    .userInformation {
+      width: 100%;
+      text-align: center;
+    }
     img {
       width: 40px;
       height: 40px;
@@ -26,28 +28,28 @@
     }
   }
 
-  .box2 {
+  .classSchedule {
     margin: 25px 25px 0 0;
     grid-column: 2 / span 6;
     grid-row: span 2;
     background: darkblue;
   }
 
-  .box3 {
+  .beltProgression {
     grid-column: 2 / span 3;
     grid-row: 3;
     margin: 0 0 25px 0;
     background: rgb(114, 9, 9);
   }
 
-  .box4 {
+  .classHistory {
     margin: 0 25px 25px 0;
     grid-column: 5 / span 3;
     grid-row: 3;
     background: rgb(0, 123, 139);
   }
 
-  .personal-details {
+  .personalDetails {
     margin-top: 2rem;
     width: 100%;
     text-align: start;
