@@ -65,4 +65,42 @@
       text-align: right;
     }
   }
+
+  .classSchedule {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      margin: 1.5rem 0;
+    }
+    // .row {
+    //   display: inherit;
+    //   flex-direction: row;
+    //   background: burlywood;
+    //   justify-content: space-between;
+    //   // align-content: space-between;
+    //   h2 {
+    //     // margin: 0 8rem;
+    //     padding: 0 6rem;
+    //   }
+    // }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0 2rem;
+
+      th {
+        background-color: #4287f5;
+        color: white;
+      }
+
+      th,
+      td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+    }
+  }
 }
