@@ -20,6 +20,20 @@
     .userInformation {
       width: 100%;
       text-align: center;
+      .personalDetails {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: start;
+        .row {
+          margin-top: 2rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .bottom {
+          text-align: right;
+        }
+      }
     }
     img {
       width: 80px;
@@ -35,61 +49,20 @@
     grid-column: 2 / span 6;
     grid-row: span 2;
     background: darkblue;
-  }
-
-  .beltProgression {
-    grid-column: 2 / span 3;
-    grid-row: 3;
-    margin: 0 0 25px 0;
-    background: rgb(114, 9, 9);
-  }
-
-  .classHistory {
-    margin: 0 25px 25px 0;
-    grid-column: 5 / span 3;
-    grid-row: 3;
-    background: rgb(0, 123, 139);
-  }
-
-  .personalDetails {
-    margin-top: 2rem;
-    width: 100%;
-    text-align: start;
-    .row {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .bottom {
-      text-align: right;
-    }
-  }
-
-  .classSchedule {
     display: flex;
     flex-direction: column;
     text-align: center;
+
     h2 {
-      margin: 1.5rem 0;
+      margin: 1rem 0 0.2rem 0;
     }
-    // .row {
-    //   display: inherit;
-    //   flex-direction: row;
-    //   background: burlywood;
-    //   justify-content: space-between;
-    //   // align-content: space-between;
-    //   h2 {
-    //     // margin: 0 8rem;
-    //     padding: 0 6rem;
-    //   }
-    // }
 
     table {
       border-collapse: separate;
       border-spacing: 0 2rem;
 
       th {
+        font-size: 1.2rem;
         background-color: #4287f5;
         color: white;
       }
@@ -101,6 +74,45 @@
         border: 1px solid black;
         padding: 5px;
       }
+    }
+  }
+
+  .beltProgression {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    margin: 0 0 25px 0;
+    background: rgb(114, 9, 9);
+    text-align: center;
+
+    img {
+      width: 15rem;
+      height: 80px;
+      margin: 2.5rem auto 0.5rem auto;
+    }
+
+    h2 {
+      margin: 1rem 0;
+    }
+  }
+
+  .classHistory {
+    margin: 0 25px 25px 0;
+    grid-column: 5 / span 3;
+    grid-row: 3;
+    background: rgb(0, 123, 139);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      margin: 1rem 0 0.2rem 0;
+    }
+    table {
+      border-spacing: 0 0.5rem;
+    }
+    th {
+      font-size: 1.2rem;
+      width: 150px;
+      padding: 0.5rem 0;
     }
   }
 }
