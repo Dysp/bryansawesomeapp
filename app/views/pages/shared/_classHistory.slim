@@ -4,21 +4,23 @@
         tr
             th Class
             th Date & Time
-        tr
-            td Beginner's Grappling
-            td 5/10 - 06:00am
-        tr
-            td Advanced Grappling
-            td 5/10 - 07:00am
-        tr
-            td Beginner's Mixed Martial
-            td 5/10 - 08:00am
-        tr
-            td Advanced Mixed Martial Arts
-            td 5/10 - 10:00am
-        tr
-            td Beginner's Striking
-            td 5/9 - 06:00am
-        tr
-            td Advanced Striking
-            td 5/9 - 07:00am
+        - 6.times do
+            = render partial: "pages/shared/tableData2", locals:{className:"Whatever Class", time: "Whatever Time"}
+        / tr
+        /     td Beginner's Grappling
+        /     td 5/10 - 06:00am
+        / tr
+        /     td Advanced Grappling
+        /     td 5/10 - 07:00am
+        / tr
+        /     td Beginner's Mixed Martial
+        /     td 5/10 - 08:00am
+        / tr
+        /     td Advanced Mixed Martial Arts
+        /     td 5/10 - 10:00am
+        / tr
+        /     td Beginner's Striking
+        /     td 5/9 - 06:00am
+        / tr
+        /     td Advanced Striking
+        /     td 5/9 - 07:00am
