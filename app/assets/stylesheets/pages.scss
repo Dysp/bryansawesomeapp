@@ -24,6 +24,9 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center;
+  .user {
+    margin: 2rem 0;
+  }
 }
 
 .login {
@@ -64,10 +67,6 @@ body {
 .top {
   font-size: 20px;
   margin-bottom: 3rem;
-}
-
-.user {
-  margin: 2rem 0;
 }
 
 .button button {

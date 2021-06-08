@@ -1,0 +1,41 @@
+.classSchedule
+    h2 Class Schedule
+    table
+        tr
+            th Time
+            th Class
+            th Instructor
+        - 6.times do
+            = render partial: "/pages/shared/tableData", locals: { time: "Yooo", className: "LOL", instructor: "Eyyy"}
+        / tr
+        /     td 06:00am
+        /     td Beginner's Grappling
+        /     td John Danaher
+        / tr
+        /     td 06:00am
+        /     td Beginner's Striking
+        /     td Justin Gaethje
+        / tr
+        /     td 07:00am
+        /     td Advanced Striking
+        /     td Israel Adesanya
+        / tr
+        /     td 07:00am
+        /     td Advanced Grappling
+        /     td Khabib Nurmagamedov
+        / tr
+        /     td 08:00am
+        /     td Beginner's Mixed Martial Arts
+        /     td Georges St-Pierre
+        / tr
+        /     td 10:00am
+        /     td Advanced Mixed Martial Arts
+        /     td Khabib Nurmagamedov
+        / tr
+        /     td 12:00pm
+        /     td Strength & Conditioning
+        /     td Big Ramy
+        / tr
+        /     td 1:00pm
+        /     td Yoga
+        /     td Eddie Bravo
