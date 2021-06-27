@@ -3,5 +3,6 @@
     .ranks
         h2 Ranks
         .ranksInner
-            - 7.times do
-                = render partial: "/pages/shared/rank"
+            - Rank.all.each do |rank|
+                = render partial: "/pages/shared/rank", locals: { rank: rank }
+
